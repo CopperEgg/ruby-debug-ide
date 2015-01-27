@@ -2,6 +2,9 @@ require 'cgi'
 require 'yaml'
 require 'monitor'
 
+# Switching to 'psych' yamler
+YAML::ENGINE.yamler='psych'
+
 module Debugger
 
   class XmlPrinter # :nodoc:
